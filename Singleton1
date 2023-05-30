@@ -1,0 +1,18 @@
+package sample;
+
+
+
+public class Singleton1 {
+	
+	private static class LoadSingleton {
+		static final Singleton1 INSTACNE1 = new Singleton1();
+	}
+	
+	private Singleton1() {
+		
+	}
+	
+	public static Singleton1 getInstacne() {
+			return LoadSingleton.INSTACNE1;
+	}
+}
